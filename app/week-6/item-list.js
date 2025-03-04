@@ -20,6 +20,10 @@ export default function ItemList() {
       category[item.category] = [];
     }
     category[item.category].push(item);
+
+    category[item.category] = [...category[item.category]].sort((a, b) => {
+      return a.name.localeCompare(b.name);
+    });
     return category;
   }, {});
 
