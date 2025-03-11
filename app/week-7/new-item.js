@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function NewItem({ onAddItem }) {
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [category, setCategory] = useState("Produce");
+  const [category, setCategory] = useState("produce");
 
   const handleIncrement = () => {
     if (quantity < 20) {
